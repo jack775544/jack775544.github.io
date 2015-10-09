@@ -1,0 +1,165 @@
+html{
+    font-family: courier;
+    line-height: 2em;
+}
+
+body{
+    width:80%;
+    margin:auto;
+    background-image: url("../icons/backg.png");
+    background-repeat: round;
+    background-size: auto;
+}
+
+h1{
+    align-self: center;
+    text-align: center;
+    display: inline;
+    background-color: black;
+    color: white;
+    width: auto
+}
+
+h2{
+    text-align: center;
+    display: inline;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    background-color: black;
+    color: white;
+}
+
+.h0{
+    font-size: 20px;
+    display: inline;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    background-color: black;
+    color: white;
+}
+
+ul{
+    font-size: 20px;
+    text-align:center;
+    display: inline;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+}
+
+.tite{
+    font-size: 20px;
+    text-align: left;
+    list-style-type: none;
+    display: inline;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    background-color: black;
+    color: white;
+}
+
+.tate{
+    font-size: 20px;
+    text-align: left;
+    list-style-type: none;
+    display: inline;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    background-color: black;
+    color: white;
+}
+
+.backico{
+    width: 30px;
+    height: 30px;
+}
+
+.diarylist{
+    display: table;
+}
+
+.diaryrow{
+    display: table-row;
+}
+
+.diaryname, .diarylink{
+    display: table-cell;
+}
+
+.diarylink{
+    padding-left: 200px;
+}
+
+#story{
+    line-height: initial;
+    white-space: pre-wrap;
+    background-color: black;
+    color: white;
+}
+
+.login{
+    border: 2px solid grey;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.loginbox{
+    display: table;
+    width: 100%;
+    background-color: white;
+}
+
+.loginrow{
+    display: table-row;
+}
+
+.loginrow div{
+    display: table-cell;
+    padding: 10px;
+}
+
+.loginrow div:first-of-type{
+    text-align: right;
+    width: 300px;
+}
+
+.loginrow div:last-of-type{
+    text-align: left;
+}
+
+.loginrow input{
+    width: 90%;
+}
+
+.potato{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10000;
+}
+
+.makeitrain, .nope{
+    position:fixed;
+    bottom:0;
+    right: 0px;
+    z-index:999999;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+header{
+    text-align: center;
+}
+
+.h0space{
+    margin-bottom: 2em;
+}

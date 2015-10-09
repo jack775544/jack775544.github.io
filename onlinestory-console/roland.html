@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Written By Sharfa
+-->
+<html lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <title>CyberLives</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".hidden").hide();
+            $("#loginbutton").click(function () {
+                var pass = $("#password").val()
+                var hash = '27cfe1c4c58e082c734bd19495dc681aed2563468cd5a6903f98580198e7e0cd4a615e67135f41c81fb861e967e7b660a0fa748515c7ee8cd94963d94434b13a';
+                if (CryptoJS.SHA3(pass) == hash) {
+                    alert('User Authenticated: Welcome ROLAND');
+                    var webloc = 'diary/' + pass +'/rolandcontent.html';
+                    window.location = webloc;
+                } else {
+                    alert("Login Failed: System Access Rejected");
+                    window.location = "index_legacy.html";
+                }
+            });
+        });
+    </script>
+    <h2>EKIDA TECH SECURE SYSTEMS LOGIN</h2>
+    <!--I heard you like div tags so I put some div tags in your div tags so you could have some div tags with your div tags-->
+    <br>
+    <div class="tate">Accessing secure DIARY entries for user ROLAND</div>
+    <br>
+    <div class="tate">Please enter your credentials ROLAND</div>
+    <div class="login">
+        <div class="loginbox">
+            <div class="loginrow">
+                <div>User:</div>
+                <div>ROLAND</div>
+            </div>
+            <div class="loginrow">
+                <div>Please Enter Password:</div>
+                <div>
+                    <input type="text" id="password" />
+                </div>
+            </div>
+        </div>
+        <button id="loginbutton">Login</button>
+    </div>
+
+    <!--People with javascript turned off will see this message-->
+    <div class="hidden">
+        <p>
+            So, this message really shouldn't been seen.
+            <br/> If you are getting this text then something has gone horribly wrong.
+            <br/>
+        </p>
+        <p>
+            Since the fancy Javascript didn't work the url of the page you are looking for is 'http://cyberlives.soykaf.org/password/rolandcontent.html', where the word password in the URL is replaced by the password that you would normally use to enter into the page. Try activating scripts on your browser if you A, hate freedom and B, want this website to work properly. I promise I am not trying to blow up your computer (maybe).
+            <br/> To find this password, go read the story, it is in there and it is quite easy to find.
+            <br/>
+        </p>
+    </div>
+    <center>
+        <div class="tate"><a href="diary.html">EXIT DATABASE</a></div>
+    </center>
+</body>
+
+</html>

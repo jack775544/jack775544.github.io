@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <title>CyberLives</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+            if (CryptoJS.MD5(prompt('Please Authenticate User','')) == '9bfd719cf4f17e1969cf566a31e88a18'){
+                alert('User Authenticated: Welcome Officer');
+            }
+            else{
+                alert("Login Failed: System Access Rejected");
+                window.location="../index_legacy.html";
+            }
+        </script>
+    <div>
+        <h1>SPD</h1>
+    </div>
+    <div class="h0space">
+        <h2>Police Database</h2>
+    </div>
+    <!--For these pages a list is correct symantically however I am too lazy to deal with the different stylings so I changed it to divs instead-->
+    <div>
+        <a href="profiles.html"><img src="../Icons/text.gif" />
+            <div class="tate">Criminal Profiles</div>
+        </a>
+    </div>
+    <div>
+        <a href="situation.html"><img src="../Icons/text.gif" />
+            <div class="tate">SitRep</div>
+        </a>
+    </div>
+
+    <a href="../index_legacy.html"><img src=../Icons/back.png class="backico">
+    </a>
+</body>
+
+</html>
