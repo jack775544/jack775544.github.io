@@ -1,3 +1,3 @@
-[submodule "website"]
-	path = website
-	url = https://jack775544@bitbucket.org/jack775544/website.git
+[submodule "onlinestory-console"]
+	path = onlinestory-console
+	url = https://github.com/jack775544/onlinestory-console.git
