@@ -4,3 +4,6 @@
 [submodule "forgotten_enemies_walkthrough"]
 	path = forgotten_enemies_walkthrough
 	url = https://jack775544@bitbucket.org/jack775544/forgotten_enemies_walkthrough.git
+[submodule "js-piano"]
+	path = js-piano
+	url = https://github.com/jack775544/js-piano
