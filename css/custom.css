@@ -1,0 +1,49 @@
+.project img {
+    border-radius: 150px;
+    width: 250px;
+    height: 250px;
+}
+.project {
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.home div img {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+}
+.home div svg {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+}
+#blog{
+    border-radius: 0px;
+}
+.home div {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+.site-nav .trigger {
+    margin: 0px 5px 0px 5px;
+}
+@media only screen and (max-device-width: 480px) {
+    .project img {
+        border-radius: 75px;
+        width: 150px;
+        height: 150px;
+    }
+    .home div img {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+    .home div svg {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+}
