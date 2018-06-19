@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>Bath Magic</title>
+	</head>
+
+	<body>
+		<div id="main">			
+			<header>
+			<a href="index.html"><img src="image/logobath.png" alt="Bath Magic Logo" id="logo"/></a>
+			<div id="title">Bath Magic</div>
+			<nav>
+				<ul>
+					<a href="index.html"><li>Home</li></a>
+					<a href="about.html"><li>About Us</li></a>
+					<a href="products.html"><li>Products</li></a>
+					<a href="services.html"><li>Services</li></a>
+					<a href="contact.html"><li>Contact</li></a>
+				</ul>
+			</nav>
+			</header>
+		
+			<p id='p2'>
+			<img alt="demo" class="imgslider" src="image/tub1.jpg">
+			<img alt="demo" class="imgslider" src="image/mat1.jpg">
+			<img alt="demo" class="imgslider" src="image/popup.jpg">
+			<img alt="demo" class="imgslider" src="image/repair.jpg">
+			
+			<h1>Products</h1>			
+			Here at Bath Magic we offer a range of different products that can
+			be not only used in the tub, but anywhere around the bathroom.
+			<br/><br/>
+			
+				<a href="bathmats.html">Bathmats</a></br>
+				<a href="tubs.html">Tubs</a></br>
+				<a href="diykits.html">DIY Kits</a></br>
+				<a href="drains.html">Drain Kits</a></br>
+			</p>
+				
+		<footer id ="footer">
+			
+			<nav>
+				<a href="index.html">Home</a> |
+				<a href="about.html">About Us</a> |
+				<a href="products.html">Products</a> |
+				<a href="services.html">Services</a> |
+				<a href="contact.html">Contact</a>
+			</nav>
+			
+			<p>Call Us On: (937) 832 0427 &nbsp; or  &nbsp; Email Us At Service@uglytub.com</p>
+				
+		</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script>
+			imgs = $(".imgslider");
+			var imgno = 0;
+			window.setInterval(function(){ImgSlider()}, 6000);
+			function ImgSlider(){
+				$(imgs[Math.abs(imgno)]).fadeOut(500, function(){$(imgs[Math.abs(imgno)]).fadeIn(500)});
+				imgno = imgno + 1;
+				imgno = imgno % imgs.length;
+			}
+			
+		</script>
+	</body>
+
+</html>

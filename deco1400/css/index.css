@@ -1,0 +1,261 @@
+html{
+	font-family:"Verdana",sans-serif;
+}
+
+body{
+	background-color:#558ed5;
+}
+
+#main{
+	margin:auto;
+	width:900px;
+	float:top;
+	background-color:#c6d9f1;
+}
+
+#logo{
+	float:left;
+	width:130px;
+	margin:2%;
+	
+}
+
+#h1{
+	float:left;
+	font-size:2.5em;
+}
+
+#footer{
+	clear: both;
+	color: black;
+	text-align:center;
+	border-top: medium solid #808080;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#imghome{
+	width:400px;
+	margin-right:3.5%;
+	margin-left:2.5%;
+	float:right;
+}
+
+#img1{
+	width:400px;
+	margin-left:3.5%;
+	margin-right:2.5%;
+	float:left;
+}
+
+#p2{
+	float:left;
+	margin-left:2.5%;
+	font-size:16px;	
+}
+
+#contacthead{
+	float:left;
+	margin-left:2.5%;
+	font-size:16px;
+	width: 100%;
+}
+
+.special{
+	float:left;
+	background-color:#558ed5;
+	width:280px;
+	height:80px;
+	padding-left:10px;
+}
+
+
+.special>p{
+	font-size: 1.25em;
+	color:#FFFFFF;	
+}
+
+
+.specialimg{
+	width:100px;
+	height:80px;
+	float:left;
+	margin-left:40px;
+}
+
+.prodlist{
+	float:left;
+	background-color:#558ed5;
+	width:600px;
+	height:80px;
+	clear: right;
+	padding-left:10px;
+}
+
+.prodlist>p{
+	font-size: 1.25em;
+	color:#FFFFFF;	
+}
+
+#specials{
+	clear: both;
+} 
+
+a{
+	text-decoration: none;
+}
+
+strong{
+	font-size: 1.25em;
+	margin: 20px;
+}
+
+/* ---------- Product Category Page ----------*/
+
+.prod{
+	clear: both;
+}
+
+.prodlist:hover{
+	background-color:#556ed0;
+}
+
+/* ---------- Header and Footer Things After Here ----------*/
+
+header{
+	clear: both;
+	width: 100%;
+	display:block;
+	float:left;
+}
+
+#title{
+	margin-top: 20px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 90%;
+}
+
+header ul{
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	clear: right;
+	width: 70%;
+	font-size: 1.25em;
+	padding-left: 0px;
+}
+
+nav li{
+	display:block;
+	float: left;
+	background-color:#558ed5;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	width: 20%;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+}
+
+header nav a{
+	color: white;
+}
+
+nav li:hover{
+	background-color: white;
+	color: #558ed5;
+}
+
+footer nav{
+	background-color: #558ed5;
+	width: 425px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	color: black;
+	padding: 10px;
+}
+
+/* ---------- Product Page ---------- */
+
+#prodhead{
+	clear: both;
+	font-size: 1.25em;
+}
+
+#proddesc{
+	clear: both;
+	padding: 5px;
+	margin: 5px;
+}
+
+/* ---------- Contact Page ---------- */
+
+form{
+	margin: 15px;
+}
+
+input{
+	width: 500px;
+}
+
+button{
+	width: 150px;
+}
+
+textarea{
+	width: 500px;
+}
+
+select{
+	width: 150px;
+}
+
+iframe{
+	width:600;
+	height:450;
+}
+
+/* ---------- FAQ ---------- */
+.Faq{
+	margin: 20px;
+	width: 700px;
+	border: #558ed5 solid;
+}
+
+.faqhead{
+	background-color: #558ed5;
+}
+
+.Answer{
+	padding:1px 5px 1px 10px;
+	background-color:#556ed0;
+}
+
+.exp{
+	color: red;
+	float: left;
+	margin-right: 2px;
+	font-family: courier;
+}
+
+.imgslider{
+	width:400px;
+	height: 400px;
+	margin-left:3.5%;
+	margin-right:2.5%;
+	float:left;
+	display: none;
+}
+
+.imgslider:first-of-type{
+	width:400px;
+	margin-left:3.5%;
+	margin-right:2.5%;
+	float:left;
+	display: block;
+}

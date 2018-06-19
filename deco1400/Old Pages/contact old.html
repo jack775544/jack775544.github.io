@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+		<title>Bath Magic</title>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/jquery.validate.js"></script>
+	</head>
+
+	<body>
+		<div id="main">
+		
+			<img alt="logo" src="image/logo.png" id="logo">
+			
+			<h1 id="h1"><bold>Bath Magic</bold></h1>
+			
+			<section id="section1">
+			
+				<p id="p1"><a href="index.html" target="_blank">Home</a>  |  <a href="about.html" target="_blank">About Us</a>  |  <a href="product.html" target="_blank">Products</a>  | <a href="contact.html" target="_blank">Contact</a>  |  Other Pages Go Here</p>
+			
+			</section>
+		<div id="body">
+			
+			<h1>Contact Us</h1></br />
+			<form id="profileForm" method="get" >
+			<!--error class is called on in javascript and given a value and pops up next to the field that is incorrect-->
+			<div class="error" style="display:none;">
+			<span></span>.</br />
+			</div>
+			<div id="form">Company Name</div><input id="Cname" value="" class="required" type="text" name="Cname" /></br />
+			<div id="form">Your Position</div><input id="Posi" value="" class="required" type="text" name="Posi" /></br />
+			<div id="form">City</div><input id="City" value="" class="required" type="text" name="City" /></br />
+			<div id="form">State</div><input id="State" value="" class="required" type="text" name="State" /></br />
+			<div id="form">Phone</div><input id="Pnum" value="" class="required" type="text" name="Pnum" /></br />
+			<div id="form">Website</div><input id="Webs" value="" class="required" type="text" name="Webs" /></br />
+			<div id="form">Country</div><select>
+						<option value="AUS">Australia</option>
+						<option value="USA">America</option>
+						<option value="ENG">England</option>
+					</select></br /></br />
+			<div id="form">Comment</div><textarea name="comment" rows="4" cols="30">Enter Comments here...</textarea></br />
+			<input id="SubmitB" type="submit" name="Sumbit" value="Submit" />
+			</form>
+		</div>
+		</div>
+		<footer id ="footer">
+				
+			<p>Bath Magic	&nbsp; &nbsp; <a href="index.html" target="_blank">Home</a>  |  <a href="about.html" target="_blank">About Us</a>  |  <a href="product.html" target="_blank">Products</a>  |  <a href="contact.html" target="_blank">Contact</a></p>
+			
+			<p>Call Us On: (937) 832 0427 &nbsp; or  &nbsp; Email Us At Service@uglytub.com</p>
+				
+		</footer>
+		<!--Calls on form validator from jquery.validate -->
+		<script>
+		$("form").validate();
+		</script>
+	</body>
+
+</html>

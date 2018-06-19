@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>Bath Magic</title>
+	</head>
+
+	<body>
+		<div id="main">
+					
+			<header>
+			<a href="index.html"><img src="image/logobath.png" alt="Bath Magic Logo" id="logo"/></a>
+			<div id="title">Bath Magic</div>
+			<nav>
+				<ul>
+					<a href="index.html"><li>Home</li></a>
+					<a href="about.html"><li>About Us</li></a>
+					<a href="products.html"><li>Products</li></a>
+					<a href="services.html"><li>Services</li></a>
+					<a href="contact.html"><li>Contact</li></a>
+				</ul>
+			</nav>
+			</header>
+		
+			<div id='p2'>
+			
+			<h1>Frequently Asked Questions</h1>
+			
+			<section class="Faq">
+				<div class="faqhead">
+					<div class="exp"></div>
+					<article class="question">
+						Where are you?
+					</article>
+				</div>
+				<article class="answer">
+					America
+				</article>
+			</section>
+			
+			<section class="Faq">
+				<div class="faqhead">
+					<div class="exp"></div>
+					<article class="question">
+						Where are you?
+					</article>
+				</div>
+				<article class="answer">
+					America
+				</article>
+			</section>
+			
+			<section class="Faq">
+				<div class="faqhead">
+					<div class="exp"></div>
+					<article class="question">
+						Where are you?
+					</article>
+				</div>
+				<article class="answer">
+					America
+				</article>
+			</section>
+			
+			</div>
+		<footer id ="footer">
+				
+						
+			<nav>
+				<a href="index.html">Home</a> |
+				<a href="about.html">About Us</a> |
+				<a href="products.html">Products</a> |
+				<a href="services.html">Services</a> |
+				<a href="contact.html">Contact</a>
+			</nav>
+			
+			<p>Call Us On: (937) 832 0427 &nbsp; or  &nbsp; Email Us At Service@uglytub.com</p>
+				
+		</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script>
+			as = $(".answer");
+			as.hide();
+			$(".exp").text("[+]")
+			
+			$(".faqhead").click(function(){
+				$(this).next(".answer").slideToggle();
+				$(this).find(".exp").text();
+				if ($(this).find(".exp").text() == "[+]"){
+					$(this).find(".exp").text("[-]" )
+				}else{
+					$(this).find(".exp").text("[+]")
+				}
+			});
+			
+		</script>
+	</body>
+
+</html>
