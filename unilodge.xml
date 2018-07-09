@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UnilodgessaCucumberManualSuite" project="com.unilodge.test.unilodgessa" tests="285" started="0" failures="0" errors="2" ignored="0">
+  <testsuite name="com.unilodge.generated.unilodgessa.cucumber.suite.UnilodgessaCucumberManualSuite" incomplete="true">
+    <testsuite name="Feature: UNI-A0 Login" incomplete="true">
+      <testsuite name="Scenario: Login via Email as Corporate Manager" incomplete="true">
+        <error>java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.&#13;
+	at com.mdsaas.cucumber.CucumberContext.startUp(CucumberContext.java:322)&#13;
+	at com.unilodge.generated.unilodgessa.cucumber.stepdef.UnilodgessaCucumberHooks.beforeFeature(UnilodgessaCucumberHooks.java:53)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:35)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:31)&#13;
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)&#13;
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:213)&#13;
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:201)&#13;
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:191)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:82)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:41)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:87)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)&#13;
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1127)&#13;
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:356)&#13;
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2502)&#13;
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)&#13;
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)&#13;
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:832)&#13;
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)&#13;
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)&#13;
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)&#13;
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)&#13;
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)&#13;
+	at com.mdsaas.cucumber.CucumberContext.startUp(CucumberContext.java:308)&#13;
+	... 38 more&#13;
+Caused by: java.net.ConnectException: Connection timed out: connect&#13;
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)&#13;
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)&#13;
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)&#13;
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)&#13;
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)&#13;
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)&#13;
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)&#13;
+	at java.net.Socket.connect(Socket.java:589)&#13;
+	at java.net.Socket.connect(Socket.java:538)&#13;
+	at java.net.Socket.&lt;init&gt;(Socket.java:434)&#13;
+	at java.net.Socket.&lt;init&gt;(Socket.java:244)&#13;
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)&#13;
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:306)&#13;
+	... 53 more&#13;
+&#13;
+java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.&#13;
+	at com.mdsaas.cucumber.CucumberContext.startUp(CucumberContext.java:322)&#13;
+	at com.unilodge.generated.unilodgessa.cucumber.stepdef.UnilodgessaCucumberHooks.beforeFeature(UnilodgessaCucumberHooks.java:53)&#13;
+	at com.unilodge.generated.unilodgessa.cucumber.stepdef.UnilodgessaCucumberHooks.beforeScenario(UnilodgessaCucumberHooks.java:99)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:35)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:31)&#13;
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)&#13;
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:213)&#13;
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:201)&#13;
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:191)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:82)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:41)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:87)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)&#13;
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1127)&#13;
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:356)&#13;
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2502)&#13;
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)&#13;
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)&#13;
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:832)&#13;
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)&#13;
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)&#13;
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)&#13;
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)&#13;
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)&#13;
+	at com.mdsaas.cucumber.CucumberContext.startUp(CucumberContext.java:308)&#13;
+	... 39 more&#13;
+Caused by: java.net.ConnectException: Connection timed out: connect&#13;
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)&#13;
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)&#13;
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)&#13;
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)&#13;
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)&#13;
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)&#13;
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)&#13;
+	at java.net.Socket.connect(Socket.java:589)&#13;
+	at java.net.Socket.connect(Socket.java:538)&#13;
+	at java.net.Socket.&lt;init&gt;(Socket.java:434)&#13;
+	at java.net.Socket.&lt;init&gt;(Socket.java:244)&#13;
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)&#13;
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:306)&#13;
+	... 54 more&#13;
+&#13;
+</error>
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Login via Email as Corporate Manager" incomplete="true"/>
+        <testcase name="Then I wait for the url end with &quot;portfolio-menu&quot;" classname="Scenario: Login via Email as Corporate Manager" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Login via Email as Property Manager" incomplete="true">
+        <testcase name="Given I logged into unilodge as a property manager" classname="Scenario: Login via Email as Property Manager" incomplete="true"/>
+        <testcase name="Then I wait for the url end with &quot;portfolio-menu&quot;" classname="Scenario: Login via Email as Property Manager" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Login via Email as Student" incomplete="true">
+        <testcase name="Given I logged into unilodge as a student" classname="Scenario: Login via Email as Student" incomplete="true"/>
+        <testcase name="Then I wait for the url end with &quot;portfolio-menu&quot;" classname="Scenario: Login via Email as Student" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Login via Email but dont type email" incomplete="true">
+        <testcase name="Given I am at the url that ends with &quot;login?url=/&quot;" classname="Scenario: Login via Email but dont type email" incomplete="true"/>
+        <testcase name="When I attempt to login with no email" classname="Scenario: Login via Email but dont type email" incomplete="true"/>
+        <testcase name="Then I expect the element is present by css selector &quot;#LoginExtensionLogin &gt; fieldset &gt; div.wmapp-form &gt; div.wmapp-login-extension-email &gt; div &gt; small.error&quot;" classname="Scenario: Login via Email but dont type email" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Login via Email but dont type password" incomplete="true">
+        <testcase name="Given I am at the url that ends with &quot;login?url=/&quot;" classname="Scenario: Login via Email but dont type password" incomplete="true"/>
+        <testcase name="When I attempt to login with no password" classname="Scenario: Login via Email but dont type password" incomplete="true"/>
+        <testcase name="Then I expect the element is present by css selector &quot;#LoginExtensionLogin &gt; fieldset &gt; div.wmapp-form &gt; div.wmapp-login-extension-password &gt; div &gt; small.error&quot;" classname="Scenario: Login via Email but dont type password" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Login via Email but dont type anything" incomplete="true">
+        <testcase name="Given I am at the url that ends with &quot;login?url=/&quot;" classname="Scenario: Login via Email but dont type anything" incomplete="true"/>
+        <testcase name="When I attempt to login with no parameters" classname="Scenario: Login via Email but dont type anything" incomplete="true"/>
+        <testcase name="Then I expect the element is present by css selector &quot;#LoginExtensionLogin &gt; fieldset &gt; div.wmapp-form &gt; div.wmapp-login-extension-email &gt; div &gt; small.error&quot;" classname="Scenario: Login via Email but dont type anything" incomplete="true"/>
+        <testcase name="And I expect the element is present by css selector &quot;#LoginExtensionLogin &gt; fieldset &gt; div.wmapp-form &gt; div.wmapp-login-extension-password &gt; div &gt; small.error&quot;" classname="Scenario: Login via Email but dont type anything" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-A1 Password Management" incomplete="true">
+      <testsuite name="Scenario: Reset Password" incomplete="true">
+        <testcase name="When I navigate to &quot;login&quot;" classname="Scenario: Reset Password" incomplete="true"/>
+        <testcase name="Then I click an element by css selector &quot;.wmapp-login-extension-forgotten-password&quot;" classname="Scenario: Reset Password" incomplete="true"/>
+        <testcase name="And I clear and type &quot;example@workingmouse.com.au&quot; on the input box by id &quot;LoginExtensionForgottenEmail&quot;" classname="Scenario: Reset Password" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-login-extension-submit-forgotten&quot;" classname="Scenario: Reset Password" incomplete="true"/>
+        <testcase name="And I expect the element is not present by css selector &quot;.error&quot;" classname="Scenario: Reset Password" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Reset Password but didnt input email" incomplete="true">
+        <testcase name="When I navigate to &quot;login&quot;" classname="Scenario: Reset Password but didnt input email" incomplete="true"/>
+        <testcase name="Then I click an element by css selector &quot;.wmapp-login-extension-forgotten-password&quot;" classname="Scenario: Reset Password but didnt input email" incomplete="true"/>
+        <testcase name="And I clear on the input box by id &quot;LoginExtensionForgottenEmail&quot;" classname="Scenario: Reset Password but didnt input email" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-login-extension-submit-forgotten&quot;" classname="Scenario: Reset Password but didnt input email" incomplete="true"/>
+        <testcase name="And I expect the element is present by css selector &quot;.error&quot;" classname="Scenario: Reset Password but didnt input email" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-A2 Account Management" incomplete="true">
+      <testsuite name="Scenario: Update Name" incomplete="true">
+        <testcase name="When I navigate to &quot;login&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="Then I clear and type &quot;grant.waldeck@unilodge.com.au&quot; on the input box by id &quot;LoginExtensionLoginEmail&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;LoginExtensionLoginPassword&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-login-extension-submit-login&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I wait for the url end with &quot;portfolio-menu&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;ul.wmapp-unilodgessa-corporate-list &gt; div &gt; li &gt; a&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-unilodgessa-main-account-nav&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;div.wmapp-unilodgessa-nav-element-right_nav &gt; div &gt; nav &gt; ul &gt; li:nth-child(1) &gt; a&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I wait for the url end with &quot;corporate/account&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Eban&quot; on the input box by id &quot;UnilodgessaCorpPortalTilePersonalDetailsFirstname&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Escott&quot; on the input box by id &quot;UnilodgessaCorpPortalTilePersonalDetailsLastname&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;div.columns.wmapp-unilodgessa-account-actions &gt; div &gt; div &gt; button&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="When I navigate to &quot;corporate/account&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//*[@class='wmapp-unilodgessa-main-account-nav']/h3[text()='Eban Escott']&quot; in view &quot; &quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Grant&quot; on the input box by id &quot;UnilodgessaCorpPortalTilePersonalDetailsFirstname&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Waldeck&quot; on the input box by id &quot;UnilodgessaCorpPortalTilePersonalDetailsLastname&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;div.columns.wmapp-unilodgessa-account-actions &gt; div &gt; div &gt; button&quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I expect the element is present by xpath &quot;//*[@class='wmapp-unilodgessa-main-account-nav']/h3[text()='Grant Waldeck']&quot; in view &quot; &quot;" classname="Scenario: Update Name" incomplete="true"/>
+        <testcase name="And I navigate with redirect to &quot;logout&quot; expecting &quot;login?url=/&quot;" classname="Scenario: Update Name" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Try to update a dodgy email." incomplete="true">
+        <testcase name="When I navigate to &quot;login&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="Then I clear and type &quot;grant.waldeck@unilodge.com.au&quot; on the input box by id &quot;LoginExtensionLoginEmail&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;LoginExtensionLoginPassword&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-login-extension-submit-login&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I wait for the url end with &quot;portfolio-menu&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;ul.wmapp-unilodgessa-corporate-list &gt; div &gt; li &gt; a&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-unilodgessa-main-account-nav&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;div.wmapp-unilodgessa-nav-element-right_nav &gt; div &gt; nav &gt; ul &gt; li:nth-child(1) &gt; a&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I wait for the url end with &quot;corporate/account&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I clear and type &quot;not_an_email&quot; on the input box by id &quot;UnilodgessaCorpPortalTilePersonalDetailsEmail&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+        <testcase name="And I expect the element is present by css selector &quot;.error&quot;" classname="Scenario: Try to update a dodgy email." incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-A3 Profile Image" incomplete="true">
+      <testsuite name="Scenario: Update Display Picture" incomplete="true">
+        <testcase name="When I navigate to &quot;login&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="Then I clear and type &quot;grant.waldeck@unilodge.com.au&quot; on the input box by id &quot;LoginExtensionLoginEmail&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;LoginExtensionLoginPassword&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-login-extension-submit-login&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I wait for the url end with &quot;portfolio-menu&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;ul.wmapp-unilodgessa-corporate-list &gt; div &gt; li &gt; a&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;.wmapp-unilodgessa-main-account-nav&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I click an element by css selector &quot;div.wmapp-unilodgessa-nav-element-right_nav &gt; div &gt; nav &gt; ul &gt; li:nth-child(1) &gt; a&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I wait for the url end with &quot;corporate/account&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+        <testcase name="And I upload something with &quot;src/test/resources/unilodgessa/profile.jpg&quot; path by css selector &quot;.wmapp-unilodgessa-personal_details-feature-image&quot;" classname="Scenario: Update Display Picture" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-A4 Account Settings" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-A5 Logout" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-A6 Payment Details" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-B0 Add Corporate Manager Account" incomplete="true">
+      <testsuite name="Scenario: Add a Corporate Account" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I navigate to &quot;corporate/admin&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//div[text()=&quot;Corporate Admins.&quot;]&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[@class=&quot;new-element&quot;]&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Nathan&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsFirstname&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Luong&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsLastname&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Mr&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsTitle&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;nhan@roguetwo.tech&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsEmail&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsPassword&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsConfirmPassword&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;SAVE&quot;]&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//td[@class=&quot;wmapp-super-list-list-item-col member_name&quot; and text()=&quot;Nathan Luong&quot;]&quot;" classname="Scenario: Add a Corporate Account" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-B13 Add new student" incomplete="true">
+      <testsuite name="Scenario: Add a new student" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I navigate to &quot;residents&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//button[@class=&quot;new-element&quot;]&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Nathan&quot; on the input box by id &quot;UnilodgessaResidentsTileUserDetailsFirstname&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Luong&quot; on the input box by id &quot;UnilodgessaResidentsTileUserDetailsLastname&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Mr&quot; on the input box by id &quot;UnilodgessaResidentsTileUserDetailsTitle&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I clear and type &quot;nhan@roguetwo.tech&quot; on the input box by id &quot;UnilodgessaResidentsTileUserDetailsEmail&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaResidentsTileUserDetailsPassword&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaResidentsTileUserDetailsConfirmPassword&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I select the date time &quot;05/11/1995 00:00:00&quot; from date picker by id &quot;UnilodgessaResidentsTileResidentDetailsDob&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;SAVE&quot;]&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//tr[@data-model-value=&quot;Nathan Luong&quot;]&quot;" classname="Scenario: Add a new student" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-B4 Create and Manage Property Manager Account" incomplete="true">
+      <testsuite name="Scenario: Add a Property Manager Account" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I navigate to &quot;corporate/admin&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//div[text()=&quot;Property Managers&quot;]&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[@class=&quot;new-element&quot;]&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Nathan&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsFirstname&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Luong&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsLastname&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Mr&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsTitle&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;nhan@roguetwo.tech&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsEmail&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsPassword&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsConfirmPassword&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;SAVE&quot;]&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//td[@class=&quot;wmapp-super-list-list-item-col member_name&quot; and text()=&quot;Nathan Luong&quot;]&quot;" classname="Scenario: Add a Property Manager Account" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-B5 Edit Property Manager Details" incomplete="true">
+      <testsuite name="Scenario: Edit Property Manager Details" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I navigate to &quot;corporate/admin&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//tr[@data-model-value=&quot;Nathan Luong&quot;]/td[2]/a&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Rex&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsFirstname&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Truong&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsLastname&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I clear and type &quot;Mr&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsTitle&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I clear and type &quot;void@roguetwo.tech&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsEmail&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsPassword&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I clear and type &quot;password&quot; on the input box by id &quot;UnilodgessaCorpPortalTileUserDetailsConfirmPassword&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;UPDATE&quot;]&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="Then I click an element by xpath &quot;//tr[@data-model-value=&quot;Rex Truong&quot;]/td[2]/a&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I expect the &quot;Rex&quot; value shown by id &quot;UnilodgessaCorpPortalTileUserDetailsFirstname&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I expect the &quot;Truong&quot; value shown by id &quot;UnilodgessaCorpPortalTileUserDetailsLastname&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I expect the &quot;Mr&quot; value shown by id &quot;UnilodgessaCorpPortalTileUserDetailsTitle&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+        <testcase name="And I expect the &quot;void@roguetwo.tech&quot; value shown by id &quot;UnilodgessaCorpPortalTileUserDetailsEmail&quot;" classname="Scenario: Edit Property Manager Details" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-B6 Remove Property Manager" incomplete="true">
+      <testsuite name="Scenario: Remove a Property Manager with Yes confirmation" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Remove a Property Manager with Yes confirmation" incomplete="true"/>
+        <testcase name="And I navigate to &quot;corporate/admin&quot;" classname="Scenario: Remove a Property Manager with Yes confirmation" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//tr[@data-model-value=&quot;Nathan Luong&quot;]/td[2]/a&quot;" classname="Scenario: Remove a Property Manager with Yes confirmation" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[@class=&quot;wmapp-button&quot; and text()=&quot;REMOVE&quot;]&quot;" classname="Scenario: Remove a Property Manager with Yes confirmation" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[@data-index=&quot;1&quot;]&quot;" classname="Scenario: Remove a Property Manager with Yes confirmation" incomplete="true"/>
+        <testcase name="Then I expect the element is not present by xpath &quot;//tr[@data-model-value=&quot;Nathan Luong&quot;]&quot;" classname="Scenario: Remove a Property Manager with Yes confirmation" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Remove a Property Manager with No confirmation" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Remove a Property Manager with No confirmation" incomplete="true"/>
+        <testcase name="And I navigate to &quot;corporate/admin&quot;" classname="Scenario: Remove a Property Manager with No confirmation" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//tr[@data-model-value=&quot;Nathan Luong&quot;]/td[2]/a&quot;" classname="Scenario: Remove a Property Manager with No confirmation" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[@class=&quot;wmapp-button&quot; and text()=&quot;REMOVE&quot;]&quot;" classname="Scenario: Remove a Property Manager with No confirmation" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[@data-index=&quot;2&quot;]&quot;" classname="Scenario: Remove a Property Manager with No confirmation" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//tr[@data-model-value=&quot;Nathan Luong&quot;]&quot;" classname="Scenario: Remove a Property Manager with No confirmation" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C0 PropertyDashboard" incomplete="true">
+      <testsuite name="Scenario: Can we see the property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="Then I can see a property by index 0 with name &quot;WM Hawken Drive&quot;, location &quot;Hawken Drive, St Lucia, 4067&quot;, state &quot;QLD&quot;, portfolio &quot;Working Mouse&quot;, GM &quot;Lydia Martin&quot;, Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="And I can see a property by index 1 with name &quot;WM Railway Terrace&quot;, location &quot;01 Railway Terrace, Milton, 4064&quot;, state &quot;QLD&quot;, portfolio &quot;Working Mouse&quot;, GM &quot;Lydia Martin&quot;, Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="And I can see a property by index 2 with name &quot;WM Queen Street&quot;, location &quot;01 Queen Street, Brisbane, 4000&quot;, state &quot;QLD&quot;, portfolio &quot;Working Mouse&quot;, GM &quot;Lydia Martin&quot;, Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the property" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testcase name="Feature: UNI-C1 Property Metrics" classname="Feature: UNI-C1 Property Metrics" incomplete="true"/>
+    <testsuite name="Feature: UNI-C10 Assign/Remove Property Manager to Property/Portfolio" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C11 Property Images Gallery" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C12 Property Images upload, edit" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C13 Property Documents" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C14 Property Triggers" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C15 Property Procedures" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C16 property E-Inductions" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C17 E-Inductions/Wizard Builder" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C18 Room Inspections process" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C19 Page Layout Builder Template" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C2 Filter Property Metrics" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C20 Add Multiple language versions of documents" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C21 Student App feature Custimisation" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C22 Student Access Control" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C3 Compare Property Metrics" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C4 Property List" incomplete="true">
+      <testsuite name="Scenario: Can we see the property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="Then I can see a property by index 0 with name &quot;WM Hawken Drive&quot;, location &quot;Hawken Drive, St Lucia, 4067&quot;, state &quot;QLD&quot;, portfolio &quot;Working Mouse&quot;, GM &quot;Lydia Martin&quot;, Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="And I can see a property by index 1 with name &quot;WM Railway Terrace&quot;, location &quot;01 Railway Terrace, Milton, 4064&quot;, state &quot;QLD&quot;, portfolio &quot;Working Mouse&quot;, GM &quot;Lydia Martin&quot;, Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the property" incomplete="true"/>
+        <testcase name="And I can see a property by index 2 with name &quot;WM Queen Street&quot;, location &quot;01 Queen Street, Brisbane, 4000&quot;, state &quot;QLD&quot;, portfolio &quot;Working Mouse&quot;, GM &quot;Lydia Martin&quot;, Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the property" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Can we see the Portfolios" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we see the Portfolios" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we see the Portfolios" incomplete="true"/>
+        <testcase name="And I view the portfolios" classname="Scenario: Can we see the Portfolios" incomplete="true"/>
+        <testcase name="Then I can see a portfolio by index 0 with name &quot;Working Mouse&quot;, gm &quot;Lydia Martin&quot;, manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the Portfolios" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C5 Search/Filter Properties/Portfolios" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C6 Property Details" incomplete="true">
+      <testsuite name="Scenario: Can we see the expanded details of a property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="And I open the property by index 0 details" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="Then I can see the details of the property with street &quot;Hawken Drive&quot;, suburb &quot;St Lucia&quot;, state &quot;QLD&quot;, postcode &quot;4067&quot;, telephone &quot;0732000000&quot;, office email &quot;void@workingmouse.com.au&quot;, name &quot;WM Hawken Drive&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Can we see the expanded details of a property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="And I open the property by index 1 details" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="Then I can see the details of the property with street &quot;01 Railway Terrace&quot;, suburb &quot;Milton&quot;, state &quot;QLD&quot;, postcode &quot;4064&quot;, telephone &quot;0732000000&quot;, office email &quot;void@workingmouse.com.au&quot;, name &quot;WM Railway Terrace&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Can we see the expanded details of a property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="And I open the property by index 2 details" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+        <testcase name="Then I can see the details of the property with street &quot;01 Queen Street&quot;, suburb &quot;Brisbane&quot;, state &quot;QLD&quot;, postcode &quot;4000&quot;, telephone &quot;0732000000&quot;, office email &quot;void@workingmouse.com.au&quot;, name &quot;WM Queen Street&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we see the expanded details of a property" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Can we see the expanded details of a portfolio" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+        <testcase name="And I view the portfolios" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+        <testcase name="And I open the portfolio by index 0 details" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+        <testcase name="Then I can see the details of portfolio 0 with name &quot;Working Mouse&quot;, general manager &quot;Lydia Martin&quot;, Property Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+        <testcase name="And I can see the property 0 of the portfolio with name &quot;WM Hawken Drive&quot;, location &quot;Hawken Drive, St Lucia, 4067&quot;, state &quot;QLD&quot;" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+        <testcase name="And I can see the property 1 of the portfolio with name &quot;WM Railway Terrace&quot;, location &quot;01 Railway Terrace, Milton, 4064&quot;, state &quot;QLD&quot;" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+        <testcase name="And I can see the property 2 of the portfolio with name &quot;WM Queen Street&quot;, location &quot;01 Queen Street, Brisbane, 4000&quot;, state &quot;QLD&quot;" classname="Scenario: Can we see the expanded details of a portfolio" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C7 Add/Edit a property" incomplete="true">
+      <testsuite name="Scenario: Can we edit an existing property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we edit an existing property" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we edit an existing property" incomplete="true"/>
+        <testcase name="And I open the property by index 0 details" classname="Scenario: Can we edit an existing property" incomplete="true"/>
+        <testcase name="And I edit the property to street &quot;Bobs&quot;, suburb &quot;Place&quot;, state &quot;NSW&quot;, postcode &quot;1337&quot;, telephone &quot;0738000000&quot;, office email &quot;other@workingmouse.com.au&quot;, name &quot;Steve&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we edit an existing property" incomplete="true"/>
+        <testcase name="And I open the property by index 0 details" classname="Scenario: Can we edit an existing property" incomplete="true"/>
+        <testcase name="Then I can see the details of the property with street &quot;Bobs&quot;, suburb &quot;Place&quot;, state &quot;NSW&quot;, postcode &quot;1337&quot;, telephone &quot;0738000000&quot;, office email &quot;other@workingmouse.com.au&quot;, name &quot;Steve&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we edit an existing property" incomplete="true"/>
+        <testcase name="And I revert changes to the property to street &quot;Hawken Drive&quot;, suburb &quot;St Lucia&quot;, state &quot;QLD&quot;, postcode &quot;4067&quot;, telephone &quot;0732000000&quot;, office email &quot;void@workingmouse.com.au&quot;, name &quot;WM Hawken Drive&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we edit an existing property" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Can we add a new property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we add a new property" incomplete="true"/>
+        <testcase name="When I go to the properties page" classname="Scenario: Can we add a new property" incomplete="true"/>
+        <testcase name="And I add a new property with street &quot;bald street&quot;, suburb &quot;The Moon&quot;, state &quot;Mil&quot;, postcode &quot;1337&quot;, telephone &quot;0732000000&quot;, office email &quot;void@workingmouse.com.au&quot;, name &quot;Evan's Place&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we add a new property" incomplete="true"/>
+        <testcase name="And I open the property by index 3 details" classname="Scenario: Can we add a new property" incomplete="true"/>
+        <testcase name="Then I can see the details of the property with street &quot;bald street&quot;, suburb &quot;The Moon&quot;, state &quot;Mil&quot;, postcode &quot;1337&quot;, telephone &quot;0732000000&quot;, office email &quot;void@workingmouse.com.au&quot;, name &quot;Evan's Place&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we add a new property" incomplete="true"/>
+        <testcase name="And I delete the creation of a property" classname="Scenario: Can we add a new property" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Can we remove a property" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we remove a property" incomplete="true"/>
+        <testcase name="When I got to the properties page" classname="Scenario: Can we remove a property" incomplete="true"/>
+        <testcase name="And I add a new property with street &quot;bald street&quot;, suburb &quot;The Moon&quot;, state &quot;Milkyway&quot;, postcode &quot;1337&quot;, telephone &quot;0732000000&quot;, office email &quot;void@workingmouse.com.au&quot;, name &quot;Evan's Place&quot;, portfolio &quot;Working Mouse&quot;" classname="Scenario: Can we remove a property" incomplete="true"/>
+        <testcase name="And I remove a property by index 3" classname="Scenario: Can we remove a property" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Can we cancel a property removal" incomplete="true">
+        <testcase name="Given I logged into unilodge as a corporate manager" classname="Scenario: Can we cancel a property removal" incomplete="true"/>
+        <testcase name="When I got to the properties page" classname="Scenario: Can we cancel a property removal" incomplete="true"/>
+        <testcase name="And I attempt to remove a property by index 0" classname="Scenario: Can we cancel a property removal" incomplete="true"/>
+        <testcase name="Then I can see a property by index 0 with name &quot;WM Hawken Drive&quot;, location &quot;Hawken Drive, St Lucia, 4067&quot;, state &quot;QLD&quot;, portfolio &quot;Working Mouse&quot;, GM &quot;Lydia Martin&quot;, Manager &quot;Lydia Martin&quot;" classname="Scenario: Can we cancel a property removal" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C8 Add property content in Chinese" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-C9 Property page preview" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-G0 Event Calendar" incomplete="true">
+      <testsuite name="Scenario: Look at an event" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I navigate to &quot;events/corporate&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I move the calendar to date &quot;01/07/2018&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//div[@class='fc-event-container']|//td[@class='fc-event-container']&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="Then I expect the &quot;uat&quot; value shown by id &quot;wmapp-unilodgessa-event-events-title-input&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I expect the &quot;UQ&quot; value shown by id &quot;wmapp-unilodgessa-event-events-venue-input&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I expect the &quot;This is a testing event&quot; value shown by id &quot;wmapp-unilodgessa-event-events-summary-input&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I expect the &quot;50&quot; value shown by id &quot;wmapp-unilodgessa-event-events-ticket-count-input&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I expect the &quot;35&quot; value shown by id &quot;wmapp-unilodgessa-event-events-ticket-price-input&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I expect the &quot;2018-07-05 15:40:00&quot; value shown by id &quot;wmapp-unilodgessa-event-events-start-input&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+        <testcase name="And I expect the &quot;2018-07-13 23:00:00&quot; value shown by id &quot;wmapp-unilodgessa-event-events-end-input&quot;" classname="Scenario: Look at an event" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-G1 Create Event" incomplete="true">
+      <testsuite name="Scenario: Create event in month view" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I navigate to &quot;events/corporate&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//button[text()=&quot;month&quot;]&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Add&quot;]&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I drag and drop an element by xpath from &quot;(//td[@class=&quot;fc-day-top fc-wed fc-future&quot;])[1]&quot; to &quot;(//td[@class=&quot;fc-day-top fc-wed fc-future&quot;])[2]&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;what?&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-title-input&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;UQ&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-venue-input&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;15&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-price-input&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;50&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-count-input&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;bcs&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-summary-input&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I select the checkbox by xpath &quot;//input[@attribute=&quot;collect_feedback&quot;]&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//input[@value=&quot;1&quot;]&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Create&quot;]&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//div[@class='fc-event-container']|//td[@class='fc-event-container']&quot;" classname="Scenario: Create event in month view" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Create event in week view" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I navigate to &quot;events/corporate&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//button[text()=&quot;week&quot;]&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Add&quot;]&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I drag and drop an element by xpath from &quot;(//td[@class=&quot;fc-widget-content&quot;])[6]&quot; to &quot;(//td[@class=&quot;fc-widget-content&quot;])[10]&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;what?&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-title-input&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;UQ&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-venue-input&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;15&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-price-input&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;50&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-count-input&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;bcs&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-summary-input&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I select the checkbox by xpath &quot;//input[@attribute=&quot;collect_feedback&quot;]&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//input[@value=&quot;1&quot;]&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Create&quot;]&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//div[@class='fc-event-container']|//td[@class='fc-event-container']&quot;" classname="Scenario: Create event in week view" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Create event in day view" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I navigate to &quot;events/corporate&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//button[text()=&quot;day&quot;]&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Add&quot;]&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I drag and drop an element by xpath from &quot;(//td[@class=&quot;fc-widget-content&quot;])[6]&quot; to &quot;(//td[@class=&quot;fc-widget-content&quot;])[10]&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;what?&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-title-input&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;UQ&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-venue-input&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;15&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-price-input&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;50&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-count-input&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;bcs&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-summary-input&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I select the checkbox by xpath &quot;//input[@attribute=&quot;collect_feedback&quot;]&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//input[@value=&quot;1&quot;]&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Create&quot;]&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//div[@class='fc-event-container']|//td[@class='fc-event-container']&quot;" classname="Scenario: Create event in day view" incomplete="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Create event in list view" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I navigate to &quot;events/corporate&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//button[text()=&quot;list&quot;]&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I move the calendar to date &quot;01/06/2018&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Add&quot;]&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I select the date time &quot;01/06/2018 06:10:00&quot; from date picker by id &quot;wmapp-unilodgessa-event-events-start-input&quot; on Unilodge Calendar" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I select the date time &quot;13/06/2018 18:30:00&quot; from date picker by id &quot;wmapp-unilodgessa-event-events-end-input&quot; on Unilodge Calendar" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;what?&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-title-input&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;UQ&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-venue-input&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;15&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-price-input&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;50&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-ticket-count-input&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I clear and type &quot;bcs&quot; on the input box by id &quot;wmapp-unilodgessa-event-events-summary-input&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I select the checkbox by xpath &quot;//input[@attribute=&quot;collect_feedback&quot;]&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//input[@value=&quot;1&quot;]&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Create&quot;]&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+        <testcase name="Then I expect the element is present by xpath &quot;//tr[@class=&quot;fc-list-item&quot;]&quot;" classname="Scenario: Create event in list view" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-G2 Add Booking/Payments for Event" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-G3 Search/Filter Events" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-G4 Calendar Delete" incomplete="true">
+      <testsuite name="Scenario: Delete an event" incomplete="true">
+        <testcase name="Given IamloggedInUnilodge" classname="Scenario: Delete an event" incomplete="true"/>
+        <testcase name="And I navigate to &quot;events/corporate&quot;" classname="Scenario: Delete an event" incomplete="true"/>
+        <testcase name="And I move the calendar to date &quot;01/07/2018&quot;" classname="Scenario: Delete an event" incomplete="true"/>
+        <testcase name="When I click an element by xpath &quot;//div[@class='fc-event-container']|//td[@class='fc-event-container']&quot;" classname="Scenario: Delete an event" incomplete="true"/>
+        <testcase name="And I click an element by xpath &quot;//button[text()=&quot;Delete&quot;]&quot;" classname="Scenario: Delete an event" incomplete="true"/>
+        <testcase name="And I accept the confirmation" classname="Scenario: Delete an event" incomplete="true"/>
+        <testcase name="Then I expect the element is not present by xpath &quot;//div[@class='fc-event-container']|//td[@class='fc-event-container']&quot;" classname="Scenario: Delete an event" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: UNI-G5 Post Event to Facebook" incomplete="true">
+      <testsuite name="Scenario: Not Yet Implemented" incomplete="true">
+        <testcase name="Then I fail with &quot;Not yet Implemented&quot;" classname="Scenario: Not Yet Implemented" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
